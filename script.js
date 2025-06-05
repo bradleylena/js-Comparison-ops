@@ -31,3 +31,16 @@ const brad = "brad";
 const lena = 19;
 const finish = brad + lena;
 console.log(finish);
+
+//arithmetics
+let exponentiation = 500 ** 2;
+console.log(exponentiation);
+
+let increment = 40;
+let second = ++increment;
+console.log(second);
+
+let modulus = 50;
+let operand = 30;
+let result = modulus % operand;
+console.log(result);
