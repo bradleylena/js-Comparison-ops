@@ -63,6 +63,49 @@ console.log(result);
 }
 {
   let x = 10;
-  x *= 200;
+  x **= 20;
   console.log(x);
+}
+{
+  let username = null;
+  username ||= "Guest";
+  console.log(username);
+}
+{
+  let x = "";
+  x ||= "Sign in";
+  console.log(x);
+}
+{
+  let x = undefined;
+  x ??= 10;
+  console.log(x);
+}
+
+let x = myfunction(4, 3, 2);
+
+function myfunction(a, b, c) {
+  return a * b * c;
+}
+console.log(x);
+
+{
+  function greet() {
+    console.log("Hello");
+  }
+  greet();
+}
+{
+  const name = brad;
+  const age = 18;
+  function mzee() {
+    console.log(name, age);
+  }
+  mzee("brad");
+}
+{
+  function greet(name) {
+    console.log("Hi " + name);
+  }
+  greet("lenaiyarra");
 }
