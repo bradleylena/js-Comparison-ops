@@ -44,3 +44,25 @@ let modulus = 50;
 let operand = 30;
 let result = modulus % operand;
 console.log(result);
+
+{
+  let score = 35;
+  let grade = score >= 10 ? "C" : score >= 20 ? "B" : score >= 30 ? "C" : "end";
+  console.log(grade);
+}
+
+{
+  let x = 15;
+  x += 3; //add 3
+  console.log(x);
+}
+{
+  let y = 200;
+  y %= 6;
+  console.log(y);
+}
+{
+  let x = 10;
+  x *= 200;
+  console.log(x);
+}
