@@ -109,3 +109,19 @@ console.log(x);
   }
   greet("lenaiyarra");
 }
+{
+  const bmw = {
+    model: "M340i",
+    color: "Red",
+    Origin: "Germany",
+  };
+  console.log(bmw.model, bmw.color, bmw.Origin);
+}
+
+const fn = {
+  fnme: "gello",
+  snme: function () {
+    console.log("nameis" + this.fnme);
+  },
+};
+fn.snme();
