@@ -124,4 +124,43 @@ const fn = {
     console.log("nameis" + this.fnme);
   },
 };
-fn.snme();
+{
+  const name = {
+    name: "brad",
+    sname: "lena",
+  };
+  Object.entries(name).forEach(([key, value]) => {
+    console.log(key + ":" + value);
+  });
+}
+{
+  const name = {
+    fname: "brad",
+    sname: "lena",
+    age: 19,
+  };
+  let mystring = JSON.stringify(name);
+  console.log(mystring);
+}
+{
+  const name = {
+    fname: "brad",
+    sname: "lena",
+    age: 19,
+  };
+  let myarray = Object.values(name);
+  console.log(myarray);
+}
+function Robot(name, color) {
+  this.name = name;
+  this.color = color;
+  // this.sayHello = function () {
+  //   console.log("Hi! I’m " + this.name + " and I'm " + this.color);
+  // };
+}
+const robot1 = new Robot("Robo", "red");
+const robot2 = new Robot("Zappy", "blue");
+
+console.log(robot2);
+// robot1.sayHello(); // Hi! I’m Robo and I'm red
+// robot2.sayHello(); // Hi! I’m Zappy and I'm blue
